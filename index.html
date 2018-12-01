@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+      
+      <title>Vocab</title>
+      
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    
+  </head>
+ 
+  
+  <body>
+    <h1 id = "title">Vocab Sentences</h1>
+    
+    <p>Practice Vocab by Writing Sentences</p>
+ 
+    <p id = "paragraph"></p>
+ 
+    <h2>Words</h2>
+    
+    
+    <table id='wordTable' class="myTable">
+        <tr>
+            <th>Word</th>
+        </tr>
+    </table>
+    
+    <table id='definitionTable' class="myTable">
+        <tr>
+            <th>Definition</th>
+        </tr>
+    </table>
+    
+    
+    <br><br>
+    <button id="addButton" type = "button" onclick="showInputData()" 
+        class="myButton">Add Word</button> <br>
+    
+    
+    <section id="InputData" style="display:none">
+    <table class="myTable"><tr><th>
+    
+    <p>Add Word</p>
+    <p id="wordErrorParagraph"></p>
+    <input id="wordInputField" type="text"> <br>
+    
+    <p>Add Definition</p>
+    <p id="definitionErrorParagraph"></p>
+    <input id="definitionInputField" type="text"> <br><br>
+    
+    <button type = "button" onclick="addInput()" class="myButton">Add</button>
+    
+    <button type = "button" onclick="hideInputData()" class="myButton">Cancel</button>
+    
+    <br>
+    
+    </th></tr></table>
+    </section>
+    
+    
+    
+    <script src="words.js"></script>
+    
+    <br>
+    <button type = "button" onclick="clearData()" class="myButton">Clear Data</button> 
+    
+    
+    <br>
+    <button type = "button" onclick="showData()" class="myButton">Display Current Array</button>
+    <!--
+    <br>
+    <button type = "button" onclick="test()">Test</button>
+    -->
+    
+  </body>
+  
+</html>
